@@ -1,10 +1,11 @@
-import css from "./ContactListItem.module.css";
+// import css from "./ContactListItem.module.css";
 import PropTypes from "prop-types";
 import { useDispatch } from "react-redux";
 import { deleteContact, updateContact } from "../../../redux/contacts/contactsOperation";
-import { Button, Modal, Box, FormControl, TextField, Typography } from "@mui/material";
+import { Button, Modal, Box, FormControl, TextField, Typography, InputAdornment, ListItem, ListItemText, ListItemButton, List } from "@mui/material";
 import DeleteIcon from '@mui/icons-material/Delete';
 import EditIcon from '@mui/icons-material/Edit';
+import ContactPhoneIcon from '@mui/icons-material/ContactPhone';
 import { useState } from "react";
 import { MuiTelInput } from "mui-tel-input";
 
@@ -55,16 +56,24 @@ export const ContactListItem = ({ filteredContact }) => {
 
     return (
         <>
-        <Box sx={{color: "white", display: "flex", justifyContent: "flex-end"}}>
-        <li className={css.contactListItem}>
-                <Typography>{filteredContact.name}:</Typography>
-                <Typography>{filteredContact.number}</Typography>
-                    <Button variant="contained" onClick={handleDelete}>
-                        <DeleteIcon />
-                    </Button>
-                    <Button variant="contained" onClick={handleEdit}>Edit
-                    <EditIcon />
-                    </Button>
+            <Box sx={{ color: "white", display: "flex", justifyContent: "flex-end", border: "1px solid white", padding: "2px" }}>
+        <List>
+                    <ListItem sx={{display: "flex", justifyContent: "flex-start", gap: "10px" }}
+                        disablePadding>        
+        {/* <li className={css.contactListItem}> */}
+                    <ListItemText primary={filteredContact.name} />
+                        
+                        {/* {filteredContact.name}:</ListItemText> */}
+                        
+            <ListItemText primary={filteredContact.number}>{filteredContact.number}</ListItemText>
+            
+            <ListItemButton sx={{gap: "10px", display: "flex", justifyContent: "flex-end" }}>
+            <Button variant="contained" onClick={handleDelete}>
+                <DeleteIcon />
+            </Button>
+            <Button variant="contained" onClick={handleEdit}>Edit
+                <EditIcon />
+            </Button></ListItemButton>
             
             
 <Modal
@@ -73,19 +82,35 @@ export const ContactListItem = ({ filteredContact }) => {
     aria-labelledby="modal-modal-title"
     aria-describedby="modal-modal-description"
 >
+        
     <Box sx={style}>
-        <FormControl sx={{display: "flex", gap: "20px", marginTop: "50px"}}>
-            <TextField variant="outlined" label="Name" value={name} onChange={nameChangeEvent} />
+        <Typography sx={{color: "white", display: "flex", justifyContent: "center"}} variant="h5">Update Contact</Typography>
+        
+        <FormControl sx={{ display: "flex", gap: "20px", marginTop: "50px" }}>
+                                
+        <TextField
+            variant="outlined"
+            label="Name"
+            value={name}
+            onChange={nameChangeEvent}
+            InputProps={{endAdornment: (
+            <InputAdornment position="end">
+            <ContactPhoneIcon />
+            </InputAdornment>
+            )}}                       
+        />
 
-            <MuiTelInput value={number} onChange={numberChangeEvent} />
+        <MuiTelInput value={number} onChange={numberChangeEvent} />
                             
-            <Button variant="contained" sx={{alignSelf: "center"}} onClick={handleEdit} >Cancel</Button>
-            <Button variant="contained" sx={{ alignSelf: "center" }} type="submit" onClick={handleUpdate}>&nbsp;&nbsp;Save&nbsp;&nbsp;&nbsp;</Button> 
+        <Button variant="contained" sx={{alignSelf: "center"}} onClick={handleEdit} >Cancel</Button>
+        <Button variant="contained" sx={{ alignSelf: "center" }} type="submit" onClick={handleUpdate}>&nbsp;&nbsp;Save&nbsp;&nbsp;&nbsp;</Button> 
         </FormControl>
     </Box>
 </Modal>
 
-        </li>
+                {/* </li> */}
+            
+            </ListItem></List>
         </Box>
         </>
     );

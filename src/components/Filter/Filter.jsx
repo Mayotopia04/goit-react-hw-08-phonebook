@@ -2,7 +2,8 @@
 import { useDispatch, useSelector } from "react-redux";
 import { setFilter } from "../../redux/filter/filterSlice";
 import { selectFilter } from "../../redux/filter/filterSelector";
-import { Box, TextField, Typography } from "@mui/material";
+import { Box, InputAdornment, TextField, Typography } from "@mui/material";
+import ContactPhoneIcon from '@mui/icons-material/ContactPhone';
 
 export const Filter = () => {
     const dispatch = useDispatch();
@@ -20,14 +21,19 @@ export const Filter = () => {
             
             <Typography variant="h6" sx={{display: "flex", justifyContent: "center"}}>Find Contacts by Name</Typography>
                 <TextField
-                    sx={{backgroundColor: "#fdf6f658"}}
+                    sx={{ backgroundColor: "#fdf6f658" }}
                     variant="outlined"
-                    label="Name"
+                    label="Enter name to search..."
                     type="text"
                     name="filter"
                     value={filter}
                     onChange={handleFilterChange}
-            />
+                InputProps={{endAdornment: (
+                    <InputAdornment position="end">
+                    <ContactPhoneIcon />
+                    </InputAdornment>
+                )}}
+                    />
             </Box>
         </>
     );
