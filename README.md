@@ -1,112 +1,42 @@
-# React homework template
+# Phonebook
+Phonebook App is your phonebook of choice where you can store and manage your contacts in a seamless fashion.
 
-Цей проект був створений за допомогою
-[Create React App](https://github.com/facebook/create-react-app). Для знайомства
-і налаштування додаткових можливостей
-[звернися до документації](https://facebook.github.io/create-react-app/docs/getting-started).
+<img width="508" alt="homepage window" src="https://github.com/Mayotopia04/goit-react-hw-08-phonebook/assets/134679840/864cba39-14a2-4ee9-a29e-23da0f5f6818">
+<img width="488" alt="phonebook-contacts" src="https://github.com/Mayotopia04/goit-react-hw-08-phonebook/assets/134679840/2ff9a052-da50-4541-9149-45c848ec32ed">
 
-## Створення репозиторію за шаблоном
 
-Використовуй цей репозиторій організації GoIT як шаблон для створення репозиторію
-свого проєкта. Для цього натисни на кнопку `«Use this template»` і вибери опцію
-`«Create a new repository»`, як показано на зображенні.
+## Features
 
-![Creating repo from a template step 1](./assets/template-step-1.png)
+Phonebook App boasts of efficient User Registration and Authentication without a hitch, where users can sign up very easily in the registration page and create an account.
 
-На наступному кроці відкриється сторінка створення нового репозиторію. Заповни поле
-його імені, переконайся що репозиторій публічний, після чого натисни кнопку
-`«Create repository from template»`.
 
-![Creating repo from a template step 2](./assets/template-step-2.png)
+<img width="502" alt="registration" src="https://github.com/Mayotopia04/goit-react-hw-08-phonebook/assets/134679840/29e3f956-22cb-4a83-ad52-3557aa7f3ac7">
 
-Після того як репозиторій буде створено, необхідно перейти в налаштування
-створеного репозиторію на вкладку `Settings` > `Actions` > `General` як
-показано на зображенні.
 
-![Settings GitHub Actions permissions step 1](./assets/gh-actions-perm-1.png)
 
-Проскроливши сторінку до самого кінця, у секції `«Workflow permissions»` вибери
-опцію `«Read and write permissions»` і постав галочку в чекбоксі. Це
-необхідно для автоматизації процесу деплою проєкту.
+Add, Edit and Delete functionalities of your Phonebook App allows you to manage your contacts as you see fit. These basic fatures makes for an easy to manage Phonebook without complex procedure.
 
-![Settings GitHub Actions permissions step 2](./assets/gh-actions-perm-2.png)
 
-Тепер у тебе є особистий репозиторій проекту, зі структурою файлів і папок
-репозиторію-шаблону. Далі працюй із ним як із будь-яким іншим особистим репозиторієм,
-клонуй його собі на комп'ютер, пиши код, роби комміти і відправляй їх на
-GitHub.
 
-## Підготовка до роботи
+<img width="489" alt="addcontact1" src="https://github.com/Mayotopia04/goit-react-hw-08-phonebook/assets/134679840/d66db0a9-8d0d-4b02-bbc9-8edfaf4ff082">
+<img width="490" alt="addcontact2" src="https://github.com/Mayotopia04/goit-react-hw-08-phonebook/assets/134679840/ca323a8f-d476-41a9-a27d-cbbfd69d2531">
+<img width="506" alt="updatecontact1" src="https://github.com/Mayotopia04/goit-react-hw-08-phonebook/assets/134679840/33ee5842-ee5d-4e74-8652-b0e0c0e4026e">
+<img width="491" alt="updatedcontact" src="https://github.com/Mayotopia04/goit-react-hw-08-phonebook/assets/134679840/2bfbdcb9-9995-437a-81a1-1c8938ea7ec3">
+<img width="493" alt="deleteccontact" src="https://github.com/Mayotopia04/goit-react-hw-08-phonebook/assets/134679840/69e9f1ac-f94d-408a-9d0d-5faa16ffa56a">
 
-1. Переконайся що на комп'ютері встановлено LTS-версія Node.js.
-   [Завантаж і встанови](https://nodejs.org/en/) її якщо необхідно.
-2. Встанови базові залежності проєкту командою `npm install`.
-3. Запусти режим розробки, виконавши команду `npm start`.
-4. Перейди в браузері за адресою [http://localhost:3000](http://localhost:3000).
-   Ця сторінка буде автоматично перезавантажуватися після збереження змін у файлах проєкту.
 
-## Деплой
 
-Продакшн версія проєкту буде автоматично проходити лінтинг, збиратися і
-деплоїтися на GitHub Pages, у гілку `gh-pages`, щоразу, коли оновлюється
-гілка `main`. Наприклад, після прямого пушу або прийнятого пул-реквесту. Для цього
-необхідно у файлі `package.json` відредагувати поле `homepage`, замінивши
-`your_username` і `your_repo_name` на свої, і відправити зміни на GitHub.
+## Technologies Used 
 
-```json
-"homepage": "https://your_username.github.io/your_repo_name/"
-```
+1. JavaScript
+2. React
+3. Redux
+4. ReduxJS toolkit
+5. JWT
+6. React CRUD
+7. MUI5
+8. react-helmet-async
+9. react-hot-toast
 
-Далі необхідно зайти в налаштування GitHub-репозиторію (`Settings` > `Pages`) і
-виставити роздачу продакшн-версії файлів із папки `/root` гілки `gh-pages`, якщо
-це не було зроблено автоматично.
+Thank you and enjoy!
 
-![GitHub Pages settings](./assets/repo-settings.png)
-
-### Статус деплоя
-
-Статус деплою крайнього коміту відображається іконкою біля його ідентифікатора.
-
-- **Жовтий колір** - виконується збірка і деплой проєкту.
-- **Зелений колір** - деплой завершився успішно.
-- **Червоний колір** - під час лінтингу, сборки або деплою сталася помилка.
-
-Детальнішу інформацію про статус можна подивитися, клікнувши на іконку, і
-у вікні, що випадає, перейти за посиланням `Details`.
-
-![Deployment status](./assets/deploy-status.png)
-
-### Жива сторінка
-
-Через якийсь час, зазвичай кілька хвилин, живу сторінку можна буде подивитися
-за адресою, вказаною у відредагованій властивості `homepage`. Наприклад, ось
-посилання на живу версію для цього репозиторію
-[https://goitacademy.github.io/react-homework-template](https://goitacademy.github.io/react-homework-template).
-
-Якщо відкривається порожня сторінка, переконайся, що у вкладці `Console` немає помилок
-пов'язаних із неправильними шляхами до CSS і JS файлів проєкту (**404**). Швидше 
-за все у тебе неправильне значення властивості `homepage` у файлі `package.json`.
-
-### Маршрутизація
-
-Якщо додаток використовує бібліотеку `react-router-dom` для маршрутизації,
-необхідно додатково налаштувати компонент `<BrowserRouter>`, передавши у пропе
-`basename` точну назву твого репозиторію. Слеш на початку рядка обов'язковий.
-
-```jsx
-<BrowserRouter basename="/your_repo_name">
-  <App />
-</BrowserRouter>
-```
-
-## Як це працює
-
-![How it works](./assets/how-it-works.png)
-
-1. Після кожного пушу в гілку `main` GitHub-репозиторія, запускається спеціальний
-   скрипт (GitHub Action) з файла `.github/workflows/deploy.yml`.
-2. Усі файли репозиторію копіюються на сервер, де проект ініціалізується і
-   проходить лінтинг і збірку перед деплоєм.
-3. Якщо всі кроки пройшли успішно, зібрана продакшн-версія файлів проєкту
-   відправляється в гілку `gh-pages`. В іншому випадку, в лозі виконання
-   скрипта буде вказано в чому проблема.
