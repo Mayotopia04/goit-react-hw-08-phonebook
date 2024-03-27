@@ -7,14 +7,14 @@ Phonebook App is your phonebook of choice where you can store and manage your co
 
 ## Features
 
-Phonebook App boasts of efficient User Registration and Authentication without a hitch, where users can sign up very easily in the registration page and create an account.
+Phonebook App boasts of efficient User Registration and Authentication protocol without a hitch, where users can sign up very easily in the registration page and create an account.
 
 
 <img width="502" alt="registration" src="https://github.com/Mayotopia04/goit-react-hw-08-phonebook/assets/134679840/29e3f956-22cb-4a83-ad52-3557aa7f3ac7">
 
 
 
-Add, Edit and Delete functionalities of your Phonebook App allows you to manage your contacts as you see fit. These basic fatures makes for an easy to manage Phonebook without complex procedure.
+Add, Edit and Delete functionalities of your Phonebook App allow you to manage your contacts as you see fit. These basic fatures make for an easy to handle Phonebook application without complex procedure.
 
 
 
