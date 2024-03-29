@@ -55,9 +55,9 @@ export const ContactListItem = ({ filteredContact }) => {
 
     return (
         <>
-            <Box sx={{ color: "white", display: "flex", justifyContent: "flex-end", border: "1px solid white", padding: "2px" }}>
-        <List>
-                    <ListItem sx={{display: "flex", justifyContent: "flex-start", gap: "10px" }}
+            <Box sx={{ color: "white", border: "1px solid white", padding: "0"}}>
+        <List sx={{padding: "0", paddingLeft: "10px"}}>
+                    <ListItem sx={{gap: "10px" }}
                         disablePadding>        
         {/* <li className={css.contactListItem}> */}
                     <ListItemText primary={filteredContact.name} />

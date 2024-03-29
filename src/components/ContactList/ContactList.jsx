@@ -19,7 +19,7 @@ export const ContactList = () => {
     }, [dispatch]);
 
     return (
-        <ul>
+        <ul style={{padding: "0", backgroundColor: "#62487bae"}}>
             {/*if loading and not error, show Loader */}
             {isLoading && !error && <Loader />}
 
