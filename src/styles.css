@@ -8,10 +8,11 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   /* background-color: lightpink; */
-  background-image: url("./images/maybe-bg2PNG.png");
+  background-image: url("./images/rainbow-bg.png");
   background-repeat: no-repeat;
   background-position:inherit;
   background-size: cover;
+  
 /* background: filter(url("whatever.jpg"), blur(5px)); */
 }
 

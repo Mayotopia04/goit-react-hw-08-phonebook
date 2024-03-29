@@ -35,7 +35,7 @@ export const RegisterForm = () => {
             <Box
                 component="form"
                 sx={{
-                    marginTop: "100px", marginBottom: "100px"
+                    marginTop: "150px", marginBottom: "100px"
                 }}
                 noValidate
                 autoComplete="off"

@@ -51,7 +51,7 @@ export const ContactForm = () => {
         <FormControl sx={{display: "flex", gap: "20px", marginTop: "50px"}}>
             
             <TextField
-                sx={{backgroundColor: "#fdf6f658"}}
+                sx={{backgroundColor: "#fffff699"}}
                 variant="outlined"
                 label="Name"
                 value={name}
@@ -62,7 +62,7 @@ export const ContactForm = () => {
                 />
 
             <MuiTelInput
-                sx={{backgroundColor: "#fdf6f658"}}
+                sx={{backgroundColor: "#fffff899"}}
                 value={number}
                 defaultCountry="UA"
                 onChange={numberChangeEvent} />

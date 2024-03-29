@@ -15,12 +15,11 @@ export const ContactListItem = ({ filteredContact }) => {
     const [name, setName] = useState(filteredContact.name);
     const [number, setNumber] = useState(filteredContact.number);
     const [onOpen, setOnOpen] = useState(false);
-    // const  onOpen = useDisclosure();
 
     const style = {
     position: 'absolute',
     top: '50%',
-    left: '50%',
+        left: '50%',
     transform: 'translate(-50%, -50%)',
     width: 400,
     bgcolor: '#69587bee',
@@ -88,7 +87,7 @@ export const ContactListItem = ({ filteredContact }) => {
         
         <FormControl sx={{ display: "flex", gap: "20px", marginTop: "50px" }}>
                                 
-        <TextField
+        <TextField 
             variant="outlined"
             label="Name"
             value={name}

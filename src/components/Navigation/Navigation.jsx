@@ -12,8 +12,8 @@ export const Navigation = () => {
             <Toolbar>
         {/* <nav> */}
             <NavLink to="/" className={({ isActive }) => (isActive ? css.linkActive : css.link)} >
-                    <IconButton>
-                        <HouseIcon sx={{ color: "white"}} />
+                <IconButton >
+                        <HouseIcon sx={{color: "white"}} />
                 </IconButton>
                     
             </NavLink>
@@ -21,7 +21,7 @@ export const Navigation = () => {
                 <NavLink
                     to="/contacts"
                     className={({ isActive }) => (isActive ? css.linkActive : css.link)}
-                >Contacts</NavLink>
+                >Contacts </NavLink>
             )}
                 {/* </nav> */}
             </Toolbar>
